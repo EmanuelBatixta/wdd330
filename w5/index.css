@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    gap: 2rem;
+}
+
+.box{
+    background: rgb(112, 0, 112);
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    animation: myanima 2s infinite;
+}
+
+.one{
+    animation-delay: 0s;
+}
+
+.two{
+    animation-delay: .5s;
+}
+
+.three{
+    animation-delay: .75s;
+}
+
+.four{
+    animation-delay: 1s;
+}
+
+@keyframes myanima {
+    0% {
+      transform: scale(1) translateY(0);
+      background-color: rgb(162, 84, 162);
+    }
+    50% {
+      transform: scale(1.2) translateY(-50px);
+      background-color: rgb(112, 0, 112);
+      color: #fff;
+    }
+    100% {
+      transform: scale(1) translateY(0);
+      background-color: rgb(112, 0, 112);
+    }
+}
